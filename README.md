@@ -27,7 +27,7 @@ PYBIND11_MODULE(example, m) {
 }
 ```
 
-## 3. Пишем CMake-файл (_CMakeLists.txt_)
+## 4. Пишем CMake-файл (_CMakeLists.txt_)
 ```
 cmake_minimum_required(VERSION 3.27)
 project(example)
@@ -35,12 +35,12 @@ project(example)
 add_subdirectory(extern/pybind11)
 pybind11_add_module(example example.cpp)
 ```
-## 4. Создаем папку build, заходим в нее и запускам генерацию проекта
+## 5. Создаем папку build, заходим в нее и запускам генерацию проекта
 > cmake ..<br>
 
-## 5. Открываем проект (_example.sln_) в Visual Studio и собираем
+## 6. Открываем проект (_example.sln_) в Visual Studio и собираем
 
-## 6. Копируем из папки Release скомпилированное расширение (_example.cp311-win_amd64.pyd_) в папку с питоновским файлом и запускам
+## 7. Копируем из папки Release скомпилированное расширение (_example.cp311-win_amd64.pyd_) в папку с питоновским файлом и запускам
 ```
 import example
 
