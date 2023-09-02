@@ -38,7 +38,7 @@ pybind11_add_module(example example.cpp)
 ## 5. Создаем папку build, заходим в нее и запускам генерацию проекта
 > cmake ..<br>
 
-## 6. Открываем проект (_example.sln_) в Visual Studio и собираем
+## 6. Открываем решение (_example.sln_) в Visual Studio и собираем
 
 ## 7. Копируем из папки Release скомпилированное расширение (_example.cp311-win_amd64.pyd_) в папку с питоновским файлом и запускаем
 ```
